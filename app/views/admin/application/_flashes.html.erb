@@ -16,7 +16,7 @@ This partial renders flash messages on every page.
       <% next unless value.respond_to?(:html_safe) %>
       <div class="flash flash-<%= key %> bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow-md" role="alert">
         <div class="flex">
-          <div class="py-1"><svg class="fill-current h-6 w-6 text-blue-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zM9 15V9h2v6H9zm0-8V5h2v2H9z"/></svg></div>
+          <div class="py-1"><svg class="fill-current h-6 w-6 text-blue-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 20px; height: 20px;"><path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zM9 15V9h2v6H9zm0-8V5h2v2H9z"/></svg></div>
           <div>
             <p class="font-bold"><%= flash_types(key) %></p>
             <p class="text-sm"><%= value.html_safe %></p>
@@ -26,4 +26,3 @@ This partial renders flash messages on every page.
     <% end -%>
   </div>
 <% end %>
-
