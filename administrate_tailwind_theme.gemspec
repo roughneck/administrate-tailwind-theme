@@ -30,8 +30,8 @@ Gem::Specification.new do |spec|
   end
   spec.files += Dir.glob('vendor/assets/**/*')
 
-  spec.add_dependency 'administrate', '~> 0.15'
+  spec.add_dependency 'administrate', '>= 0.15'
   spec.add_dependency 'iso_country_codes', '~> 0.7.8'
-  spec.add_runtime_dependency 'rails', '~> 7.1', '>= 7.1.3'
-  spec.add_dependency 'tailwindcss-rails', '~> 2.0'
+  spec.add_runtime_dependency 'rails', '>= 7.1.3', '< 9.0'
+  spec.add_dependency 'tailwindcss-rails', '>= 2.0'
 end
